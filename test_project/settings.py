@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9ph(dm#j=6fo8^9vj2o+kmb2^audqxwp+rr_hhc40b8_s5yn(&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -91,8 +91,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'mongo_db_test',
         'CLIENT': {
-            'host': 'mongodb+srv://abhinavabhi192018:abhinavabhi@cluster0.lsvm7.mongodb.net/',
-            'name': 'mongodbtest',
+            'host': 'mongodb+srv://abhinavabhi192018:abhinavabhi@cluster0.lsvm7.mongodb.net/mongodbtest',
             'authMechanism': 'SCRAM-SHA-1'
         }
     }
